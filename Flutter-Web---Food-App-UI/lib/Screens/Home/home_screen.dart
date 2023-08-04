@@ -14,15 +14,16 @@ class HomeScreen extends StatelessWidget {
         width: size.width,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/bg.png"),
-            fit: BoxFit.fitWidth,
+            image: AssetImage("assets/images/pg.jpg"),
+            fit: BoxFit.cover,
+            
           ),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            SizedBox(height: 41,),
             CustomAppBar(),
-            Spacer(),
             // It will cover 1/3 of free spaces
             Body(),
             Spacer(
